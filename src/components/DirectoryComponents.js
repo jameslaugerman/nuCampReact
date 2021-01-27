@@ -29,9 +29,6 @@ class Directory extends Component {
     }
 
     render() {
-        if (this.props.campsites == null) {
-            return <di
-        }
         const directory = this.props.campsites.map(campsite => {
             return (
                 <div key={campsite.id} className="col-md-5 m-1">
