@@ -13,15 +13,6 @@ const minLength = len => val => val && (val.length >= len);
             super(props);
             this.state = {
                 isModalOpen: false,
-                rating: '',
-                author: '',
-                text: '',
-                agree: false,
-                touched: {
-                    rating: false,
-                    author: false,
-                    text: false,
-                }
             };
             this.toggleModal = this.toggleModal.bind(this);
             this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,6 +25,7 @@ const minLength = len => val => val && (val.length >= len);
         }
 
         handleSubmit(values) {
+            this.toggleModal();
             console.log("Current state is: " + JSON.stringify(values));
             alert("Current state is: " + JSON.stringify(values));
         }
