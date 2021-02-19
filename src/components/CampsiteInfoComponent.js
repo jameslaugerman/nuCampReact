@@ -28,7 +28,7 @@ const minLength = len => val => val && (val.length >= len);
 
         handleSubmit(values) {
             this.toggleModal();
-            this.props.addComment(this.props.campsiteId, values.rating, values.author, values.text);
+            this.props.postComment(this.props.campsiteId, values.rating, values.author, values.text);
         }
     
         render() {
