@@ -29,8 +29,7 @@ function RenderCard({item, isLoading, errMess}) {
 }
 
 function Home(props) {
-    {console.log('props is')}
-    {console.log(props.partner)}
+   
     return (
        
         <div className="container">

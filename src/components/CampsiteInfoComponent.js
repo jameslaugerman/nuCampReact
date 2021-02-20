@@ -45,7 +45,8 @@ const minLength = len => val => val && (val.length >= len);
                      
                                 <div className="form-group">
                                     <Label htmlFor="rating" >Rating</Label>
-                                    <Control.select className="form-control" model=".rating" id="rating" name="rating">
+                                    {// eslint-disable-next-line
+}                                   <Control.select className="form-control" model=".rating" id="rating" name="rating">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -56,7 +57,8 @@ const minLength = len => val => val && (val.length >= len);
 
                                 <div className="form-group">
                                     <Label htmlFor="author" >Author</Label>
-                                    <Control.text 
+                                {// eslint-disable-next-line
+}                                  <Control.text 
                                     className="form-control" 
                                     model=".author" 
                                     id="author" 
@@ -80,8 +82,8 @@ const minLength = len => val => val && (val.length >= len);
 
                                 <div className="form-group">
                                     <Label htmlFor="text" >Comment</Label>
-
-                                    <Control.textarea className="form-control" model=".text" id="text" name="text" rows="12" />
+ {// eslint-disable-next-line
+  }                              <Control.textarea className="form-control" model=".text" id="text" name="text" rows="12" />
                                 </div>
 
                                     <Button color="primary" type="submit">
